@@ -1,7 +1,7 @@
 node{
 
    def tomcatWeb = '/opt/apache-tomcat-7.0.104/webapps'
-   def tomcatBin = '/opt/apache-tomcat-7.0.104/'
+   def tomcatBin = '/opt/apache-tomcat-7.0.104/bin'
    
    def tomcatStatus = ''
    stage('SCM Checkout'){
