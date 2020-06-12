@@ -15,10 +15,10 @@ node{
     }
     
     stage('Deploy to Tomcat'){
-        sh "cp target\\oraclesampleapp.war \"${tomcatWeb}\\oraclesampleapp.war\""
+        sh "cp target/oraclesampleapp.war \"${tomcatWeb}/oraclesampleapp.war\""
     }
       stage ('Start Tomcat Server') {
         sleep(time:5,unit:"SECONDS") 
-        sh "${tomcatBin}\\startup.sh"
+        sh "${tomcatBin}/startup.sh"
    }
 }
