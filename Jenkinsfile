@@ -5,7 +5,9 @@ node{
    
    def tomcatStatus = ''
    stage('SCM Checkout'){
+      lock('ABC_PROP') {
         git 'https://github.com/choudharyabhinav15/webapp1.git'
+      }
    }
    
    stage('Compile-Package-create-war-file'){
